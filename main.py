@@ -99,9 +99,9 @@ async def resetallcmd():
 
 
 async def main():
-    bot = Client('Elaina_Chkbot',
-        api_id= 7220432208,
-        api_hash="AAE8IsaPO0fme-Amcf3s8bpJVlPN_ag8laM",
+    bot = Client('BarryxBot',
+        api_id= 22092598,
+        api_hash="93de73c78293c85fd6feddb92f91b81a",
         bot_token="7220432208:AAE8IsaPO0fme-Amcf3s8bpJVlPN_ag8laM",
         plugins=dict(root="all")
     )
