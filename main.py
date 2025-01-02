@@ -102,7 +102,7 @@ async def main():
     bot = Client('BarryxBot',
         api_id= 22092598,
         api_hash="93de73c78293c85fd6feddb92f91b81a",
-        bot_token="7220432208:AAE8IsaPO0fme-Amcf3s8bpJVlPN_ag8laM",
+        bot_token="7393252205:AAG55M3Zv9cOnTVoHS3a3FDlMOzxVVAqPf4",
         plugins=dict(root="all")
     )
     os.system('cls')
