@@ -11,7 +11,7 @@ from all.proxis.array_proxies import proxies as array_proxies
 logging.basicConfig(level=logging.INFO)
 
 # Reemplaza con el ID del chat donde quieres enviar el registro
-LOG_CHAT_ID = -1002014870445
+LOG_CHAT_ID = 6440962840
 
 async def check_proxy(proxy):
     try:
