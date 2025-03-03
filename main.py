@@ -11,7 +11,9 @@ from all.proxis.array_proxies import proxies as array_proxies
 logging.basicConfig(level=logging.INFO)
 
 # Reemplaza con el ID del chat donde quieres enviar el registro
-LOG_CHAT_ID = 6440962840
+# Near the top, after imports
+OWNER_ID = 6440962840  # Replace with your actual Telegram user ID
+LOG_CHAT_ID = -1002046472570
 
 async def check_proxy(proxy):
     try:
@@ -100,20 +102,18 @@ async def resetallcmd():
 
 async def main():
     bot = Client('BarryxBot',
-        api_id= 22092598,
+        api_id=22092598,  # Replace with your api_id
         api_hash="93de73c78293c85fd6feddb92f91b81a",
-        bot_token="7393252205:AAG55M3Zv9cOnTVoHS3a3FDlMOzxVVAqPf4",
+        bot_token="7220432208:AAE8IsaPO0fme-Amcf3s8bpJVlPN_ag8laM",
         plugins=dict(root="all")
     )
     os.system('cls')
     await bot.start()
+    OWNER_ID = 6440962840  # Replace with your Telegram user ID
+    await bot.send_message(OWNER_ID, "Bot has started successfully!")
     await asyncio.gather(
         periodic_proxy_check(),
         periodic_renewal(bot),
         resetallcmd(),
         asyncio.Event().wait(),
     )
-
-if __name__ == "__main__":
-    os.system('cls')
-    asyncio.run(main())
